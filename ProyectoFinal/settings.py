@@ -62,13 +62,13 @@ INSTALLED_APPS = [
 
 JAZZMIN_UI_TWEAKS = {
     # "theme": "cosmo",
-    # "theme": "flatly",
-    "theme": "litera",
+     "theme": "flatly",
+    #"theme": "litera",
 }
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Kaori Shop",
-    "site_header": "Kaori Shop",
+    "site_title": "Music Academy",
+    "site_header": "Music Academy",
     "site_logo": "admin/logo5.png",
     "login_logo": None,
     "site_icon": None,
@@ -177,8 +177,8 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "correo@gmail.com"        #####Correo desde el que se enviaran los correos, tambien corregir en autenticacion > views > enviar_correo
-EMAIL_HOST_PASSWORD = "key"                 #####Clave generada en el correo
+EMAIL_HOST_USER = "andrericardo763@gmail.com"        #####Correo desde el que se enviaran los correos, tambien corregir en autenticacion > views > enviar_correo
+EMAIL_HOST_PASSWORD = "123456789aq"                 #####Clave generada en el correo
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -200,7 +200,7 @@ MESSAGE_TAGS = {
 
 }
 
-AXES_FAILURE_LIMIT = 10
+AXES_FAILURE_LIMIT = 5
 AXES_LOCKOUT_CALLABLE = "autenticacion.views.lockout"
 AXES_ONLY_USER_FAILURES	= True
 
