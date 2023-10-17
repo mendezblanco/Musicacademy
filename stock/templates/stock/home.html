@@ -109,7 +109,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Kaori te Acompaña</h1>
+						<h1>Music Academy Siempre Contigo</h1>
 					</div>
 				</div>
 			</div>
@@ -122,7 +122,7 @@
 								<img class="img-fluid w-100" src="{% static 'stock/img/category/c1.jpg'%}" alt="">
 								<a href="{% static 'stock/img/category/c1.jpg'%}" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Al estar con esa persona especial.</h6>
+										<h6 class="deal-title">Al aprender musica</h6>
 									</div>
 								</a>
 							</div>
@@ -133,7 +133,7 @@
 								<img class="img-fluid w-100" src="{% static 'stock/img/category/c2.jpg'%}" alt="">
 								<a href="{% static 'stock/img/category/c2.jpg'%}" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">En los momentos difíciles.</h6>
+										<h6 class="deal-title">A compartir la musica</h6>
 									</div>
 								</a>
 							</div>
@@ -144,7 +144,7 @@
 								<img class="img-fluid w-100" src="{% static 'stock/img/category/c3.jpg'%}" alt="">
 								<a href="{% static 'stock/img/category/c3.jpg'%}" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Al empezar un nuevo sueño.</h6>
+										<h6 class="deal-title">A entender la musica</h6>
 									</div>
 								</a>
 							</div>
@@ -155,7 +155,7 @@
 								<img class="img-fluid w-100" src="{% static 'stock/img/category/c4.jpg'%}" alt="">
 								<a href="{% static 'stock/img/category/c4.jpg'%}" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">En los momentos inolvidables.</h6>
+										<h6 class="deal-title">A enseñar la musica</h6>
 									</div>
 								</a>
 							</div>
@@ -176,8 +176,8 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
-							<h1>Nuestros Productos</h1>
-							<p>Conoce nuestros últimos productos ya disponibles para ti.</p>
+							<h1>Nuestros Cursos</h1>
+							<p>Conoce nuestros cursos ya disponibles para ti.</p>
 						</div>
 					</div>
 				</div>
@@ -204,7 +204,7 @@
 									{% if user.is_authenticated and user.is_staff is not True%}
 										<a href="{%url 'carro:agregar' arts.id%}" class="social-info">
 											<span class="ti-bag"></span>
-											<p class="hover-text">Comprar</p>
+											<p class="hover-text">Asignar</p>
 										</a>
 									{% else %}
 										<a class="social-info">
@@ -215,7 +215,7 @@
 									{% else %}
 									<a class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Agotado</p>
+										<p class="hover-text">Cupo lleno</p>
 									</a>
 									{% endif %}
 									<a href="{% url 'Producto' id=arts.id %}" class="social-info">
