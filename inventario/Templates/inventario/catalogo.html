@@ -10,7 +10,7 @@
 				<div class="col-first">
 					<h1>Catálogo</h1>
 					<nav class="d-flex align-items-center">
-						<a href="{% url 'Home' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="{% url 'Home' %}">Inicio<span class="lnr lnr-arrow-right"></span></a>
 						<!--<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>-->
 						<a href="{% url 'Catalogo' %}">Catálogo</a>
 					</nav>
@@ -49,7 +49,7 @@
 									{% if user.is_authenticated and user.is_staff is not True%}
 										<a href="{%url 'carro:agregar' arts.id%}" class="social-info">
 											<span class="ti-bag"></span>
-											<p class="hover-text">Comprar</p>
+											<p class="hover-text">Asignar</p>
 										</a>
 									{% else %}
 										<a class="social-info">
@@ -60,7 +60,7 @@
 									{% else %}
 									<a class="social-info">
 										<span class="ti-bag"></span>
-										<p class="hover-text">Agotado</p>
+										<p class="hover-text">Cupo lleno</p>
 									</a>
 									{% endif %}
 									<a href="{% url 'Producto' id=arts.id %}" class="social-info">

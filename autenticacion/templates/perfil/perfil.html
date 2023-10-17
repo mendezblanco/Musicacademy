@@ -77,8 +77,8 @@
 
 	<br>
 	<div class=" col text-center">
-		<h1 style="text-align: center;">Resumen de Compras</h1>
-		<a class="primary-btn center" href="{% url 'perfil_pdf'%}">Resumen de compras en PDF</a>
+		<h1 style="text-align: center;">Resumen de Cursos asignados</h1>
+		<a class="primary-btn center" href="{% url 'perfil_pdf'%}">Resumen de cursos en PDF</a>
 	</div>
 	        <!--================Cart Area =================-->
 			<section class="cart_area">
@@ -89,7 +89,7 @@
 								<thead>
 									<tr>
 										<th scope="col">No. de Factura</th>
-										<th scope="col">Producto</th>
+										<th scope="col">Curso</th>
 										<th scope="col">Cantidad</th>
 										<th scope="col">Fecha de compra</th>
 										<th scope="col">Estado</th>
@@ -121,9 +121,9 @@
 													{% for pedidos_comprados in pedidos_comprados %}
 														{% if pedidos_comprados.id == articulos_comprados.pedido_id %}
 															{% if pedidos_comprados.entregado is True %}
-																<h5>Entregado</h5>
+																<h5>Iniciado</h5>
 															{% else %}
-																<h5>En camino</h5>
+																<h5>Sin iniciar</h5>
 															{% endif %}
 														{% endif %}
 													{% endfor %}
