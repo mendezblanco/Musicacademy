@@ -126,7 +126,7 @@ WSGI_APPLICATION = 'ProyectoFinal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'proyecto_final',
+        'NAME': 'Music_academy',
         'USER': 'postgres',
         'PASSWORD': 'andre123',
         'HOST': '127.0.0.1',
