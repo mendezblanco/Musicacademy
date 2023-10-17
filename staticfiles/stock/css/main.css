@@ -1025,7 +1025,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
   .header_area .navbar {
-    background: #fff;
+    background: #cfe9ecd9;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
@@ -1066,7 +1066,7 @@ h1, h2, h3, h4, h5, h6 {
           border-radius: 0px;
           box-shadow: none;
           margin: 0px;
-          background: #fff; }
+          background: #cfe9ecd9; }
           @media (min-width: 992px) {
             .header_area .navbar .nav .nav-item.submenu ul {
               position: absolute;
@@ -1101,7 +1101,7 @@ h1, h2, h3, h4, h5, h6 {
             display: block;
             float: none;
             margin-right: 0px;
-            border-bottom: 1px solid #ededed;
+            border-bottom: 1px solid #cfe9ecd9;
             margin-left: 0px;
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -1110,7 +1110,7 @@ h1, h2, h3, h4, h5, h6 {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item.active {
               background: #ffba00; }
               .header_area .navbar .nav .nav-item.submenu ul .nav-item.active .nav-link {
-                color: #fff; }
+                color: #cfe9ecd9; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
               padding: 0px 30px;
@@ -1124,7 +1124,7 @@ h1, h2, h3, h4, h5, h6 {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
               background: #ffba00;
-              color: #fff; }
+              color: #cfe9ecd9; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
             visibility: visible;
@@ -1173,7 +1173,7 @@ h1, h2, h3, h4, h5, h6 {
   #search_input_box .form-control {
     background: transparent;
     border: 0;
-    color: #ffffff;
+    color: #cfe9ecd9;
     font-weight: 400;
     font-size: 15px;
     padding: 0; }
@@ -1181,16 +1181,16 @@ h1, h2, h3, h4, h5, h6 {
       box-shadow: none;
       outline: none; }
   #search_input_box input.placeholder {
-    color: #ffffff;
+    color: #cfe9ecd9;
     font-size: 14px; }
   #search_input_box input:-moz-placeholder {
-    color: #ffffff;
+    color: #cfe9ecd9;
     font-size: 14px; }
   #search_input_box input::-moz-placeholder {
-    color: #ffffff;
+    color: #cfe9ecd9;
     font-size: 14px; }
   #search_input_box input::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #cfe9ecd9;
     font-size: 14px; }
   #search_input_box .btn {
     width: 0;
@@ -1198,7 +1198,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     border: 0; }
   #search_input_box .lnr-cross {
-    color: #fff;
+    color: #cfe9ecd9;
     font-weight: 600;
     cursor: pointer;
     padding: 10px 3px; }
@@ -1242,21 +1242,21 @@ h1, h2, h3, h4, h5, h6 {
       
     #Banner1{
       font-family: "Poppins", sans-serif;
-      color :rgb(255, 145, 0);
+      color :rgb(0, 0, 0);
       font-weight: 500;
       line-height: 1.2 !important; 
     } 
 
     #Banner2{
       font-family: "Poppins", sans-serif;
-      color :rgb(255, 30, 0);
+      color :rgb(0, 0, 0);
       font-weight: 500;
       line-height: 1.2 !important; 
     }
 
     #Banner3{
       font-family: "Poppins", sans-serif;
-      color :rgb(23, 151, 151);
+      color :rgb(0, 0, 0);
       font-weight: 500;
       line-height: 1.2 !important; 
     }
@@ -1270,7 +1270,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2 !important; }*/
 
     .banner-content p{
-      color: rgb(212, 212, 212);
+      color: rgb(0, 0, 0);
     }
 
     .banner-area .active-banner-slider .owl-nav .owl-prev,
@@ -1321,7 +1321,7 @@ h1, h2, h3, h4, h5, h6 {
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
       display: inline-block;
-      color: #fff; }
+      color: #cfe9ecd9; }
   .add-bag .add-text {
     padding-left: 15px;
     font-size: 12px;
@@ -1352,16 +1352,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 90px 0 100px 0; }
   .breadcrumb-banner h1 {
     font-weight: 600;
-    color: #fff; }
+    color: #cfe9ecd9; }
     @media (max-width: 767px) {
       .breadcrumb-banner h1 {
         font-size: 30px; } }
   .breadcrumb-banner p {
     margin-bottom: 0;
-    color: #fff; }
+    color: #cfe9ecd9; }
   .breadcrumb-banner nav a {
     display: inline-block;
-    color: #fff;
+    color: #cfe9ecd9;
     font-weight: 400; }
     .breadcrumb-banner nav a span {
       display: inline-block;
