@@ -61,12 +61,17 @@
 </head>
 
 <body class="Bodyss">
-
+	<style>
+	.nav-item:hover {
+		/* Estilo al pasar el ratón sobre el texto */
+		color: red; /* Cambia a color rojo cuando se pasa el ratón */
+	  }
+	</style>
 	<!-- Start Header Area -->
 	<header class="header_area sticky-header"style="background-color:#1BC0E5;">
 		<div class="main_menu" >
 			<nav class="navbar navbar-expand-lg navbar-light main_box" style="background-color:#86dade;">
-				<div class="container" style="background-color:#84e9e5;">
+				<div class="container" style="background-color:#ffffff;">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="{% url 'Home' %}"><img src="{% static 'stock/img/logo2.png'%}" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -77,20 +82,20 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent" style="background-color:#5bd8e6; width: 1900px; height: 50px;">
-						<ul class="nav navbar-nav menu_nav ml-auto" style="background-color: #c5edf4; ">
-							<li class="nav-item {% if request.path == '/' %}active{% endif %}"><a class="nav-link" href="{% url 'Home' %}">Inicio</a></li>
+						<ul class="nav navbar-nav menu_nav ml-auto" style="background-color: #5bd8e6; ">
+							<li class="nav-item {% if request.path == '/' %}active{% endif %}"><a class="nav-link" href="{% url 'Home' %} "style="color: #04013f">Inicio</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Cursos</a>
+								 aria-expanded="false" style="color: #04013f">Cursos</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item {% if request.path == '/inventario/' %}active{% endif %}"><a class="nav-link" href="{% url 'Catalogo' %}">Catálogo</a></li>
+									<li class="nav-item {% if request.path == '/inventario/' %}active{% endif %}"><a class="nav-link" href="{% url 'Catalogo' %}"style="color: #04013f">Catálogo</a></li>
 									<!--<li class="nav-item"><a class="nav-link" href="ProductDetailsPages/ProductDetails1.html">Detalles de Producto</a></li>-->
 									<!--<li class="nav-item"><a class="nav-link" href="checkout.html">Confirmar Producto</a></li>-->
-									<li class="nav-item {% if request.path == '/carrito' %}active{% endif %}"><a class="nav-link" href="{% url 'Carrito'%}">Asignación</a></li>
+									<li class="nav-item {% if request.path == '/carrito' %}active{% endif %}"><a class="nav-link" href="{% url 'Carrito'%}"style="color: #04013f">Asignación</a></li>
 									<!--<li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmacion</a></li>-->
 								</ul>
 							</li>
-							<li class="nav-item {% if request.path == '/contacto' %}active{% endif %}"><a class="nav-link" href="{% url 'Contacto'%}">Contacto</a></li>
+							<li class="nav-item {% if request.path == '/contacto' %}active{% endif %}"><a class="nav-link" href="{% url 'Contacto'%}"style="color: #04013f">Contacto</a></li>
 
 							{% if user.is_authenticated %}
 								<li class="nav-item submenu dropdown">
@@ -98,21 +103,21 @@
 									aria-expanded="false">{{user.username}}</a>
 									<ul class="dropdown-menu">
 										{% if user.is_staff is not True%}
-											<li class="nav-item {% if request.path == '/autenticacion/perfil' %}active{% endif %}"><a class="nav-link" href="{% url 'perfil'%}">Mi perfil</a></li>
+											<li class="nav-item {% if request.path == '/autenticacion/perfil' %}active{% endif %}"><a class="nav-link" href="{% url 'perfil'%}"style="color: #04013f">Mi perfil</a></li>
 										{% else %}
-										<li class="nav-item {% if request.path == '/autenticacion/perfil' %}active{% endif %}"><a class="nav-link" href="{% url 'admin:index' %}">Administracion</a></li>
+										<li class="nav-item {% if request.path == '/autenticacion/perfil' %}active{% endif %}"><a class="nav-link" href="{% url 'admin:index' %}"style="color: #04013f">Administracion</a></li>
 										{% endif %}
-											<li class="nav-item"><a class="nav-link" href="{% url 'cerrar_sesion'%}">Cerrar sesión</a></li>
+											<li class="nav-item"><a class="nav-link" href="{% url 'cerrar_sesion'%}"style="color: #04013f">Cerrar sesión</a></li>
 									</ul>
 								</li>
 							{% else %}
-								<li class="nav-item submenu dropdown">
+								<li class="nav-item submenu dropdown"style="color: #04013f">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">Iniciar sesión</a>
+									aria-expanded="false"style="color: #04013f">Iniciar sesión</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item {% if request.path == '/autenticacion/' %}active{% endif %}"><a class="nav-link" href="{% url 'Autenticacion' %}">Registrarse</a></li>
-										<li class="nav-item {% if request.path == '/autenticacion/iniciar_sesion' %}active{% endif %}"><a class="nav-link" href="{% url 'iniciar_sesion' %}">Iniciar sesión</a></li>
-										<li class="nav-item {% if request.path == '/autenticacion/reset_password/' %}active{% endif %}"><a class="nav-link" href="{% url 'reset_password'%}">Recuperar cuenta</a></li>
+										<li class="nav-item {% if request.path == '/autenticacion/' %}active{% endif %}"><a class="nav-link" href="{% url 'Autenticacion' %}"style="color: #04013f; ">Registrarse</a></li>
+										<li class="nav-item {% if request.path == '/autenticacion/iniciar_sesion' %}active{% endif %}"><a class="nav-link" href="{% url 'iniciar_sesion' %}"style="color: #04013f; ">Iniciar sesión</a></li>
+										<li class="nav-item {% if request.path == '/autenticacion/reset_password/' %}active{% endif %}"><a class="nav-link" href="{% url 'reset_password'%}"style="color: #04013f; ">Recuperar cuenta</a></li>
 									</ul>
 								</li>
 							{% endif %}
