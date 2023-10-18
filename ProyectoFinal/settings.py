@@ -177,8 +177,8 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "andrericardo763@gmail.com"        #####Correo desde el que se enviaran los correos, tambien corregir en autenticacion > views > enviar_correo
-EMAIL_HOST_PASSWORD = "123456789aq"                 #####Clave generada en el correo
+EMAIL_HOST_USER = "musicacademy997@gmail.com"        #####Correo desde el que se enviaran los correos, tambien corregir en autenticacion > views > enviar_correo
+EMAIL_HOST_PASSWORD = "bdpt xcpb cbix njdd"                 #####Clave generada en el correo
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

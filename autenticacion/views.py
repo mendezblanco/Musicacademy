@@ -192,7 +192,7 @@ def enviar_mail(**kwargs):
 
 
     mensaje_texto=strip_tags(mensaje)
-    from_email="correo@gmail.com"         ########Correo desde el que se envia        aajekdjonxyejtih 
+    from_email="musicacademy997@gmail.com"         ########Correo desde el que se envia        aajekdjonxyejtih 
     to=kwargs.get("emailusuario")               ########Correo desde al que se envia
     # to = "correo@gmail.com"
 
