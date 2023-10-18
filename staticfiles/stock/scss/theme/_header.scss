@@ -31,7 +31,7 @@
 	@include transition();
 	.main_menu {
 		.main_box {
-			background: #fff;
+			background: #20d0c4;
 			margin: 0px auto 0;
 			max-width: 1200px;
 			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@
 		}
 	}
 	.navbar {
-		background: #fff;
+		background: #28c49f;
 		padding: 0px;
 		border: 0px;
 		border-radius: 0px;
@@ -93,7 +93,7 @@
 						border-radius: 0px;
 						box-shadow: none;
 						margin: 0px;
-						background: #fff;
+						background: #17cc9697;
 						@media (min-width: 992px) {
 							position: absolute;
 							top: 140%;
@@ -111,7 +111,7 @@
 							height: 0;
 							border-style: solid;
 							border-width: 10px 10px 0 10px;
-							border-color: #eeeeee transparent transparent transparent;
+							border-color: #df8e8e transparent transparent transparent;
 							position: absolute;
 							right: 24px;
 							top: 45px;
@@ -123,13 +123,13 @@
 							display: block;
 							float: none;
 							margin-right: 0px;
-							border-bottom: 1px solid #ededed;
+							border-bottom: 1px solid #2e99d3;
 							margin-left: 0px;
 							@include transition();
 							&.active {
 								background: $primary-color;
 								.nav-link {
-									color: #fff;
+									color: #7fa1da;
 								}
 							}
 							.nav-link {
@@ -145,7 +145,7 @@
 							&:hover {
 								.nav-link {
 									background: $primary-color;
-									color: #fff;
+									color: #7ee2e6;
 								}
 							}
 						}
@@ -213,7 +213,7 @@
 	.form-control {
 		background: transparent;
 		border: 0;
-		color: #ffffff;
+		color: #a54343;
 		font-weight: 400;
 		font-size: 15px;
 		padding: 0;
@@ -224,7 +224,7 @@
 	}
 	input {
 		@include placeholder {
-			color: #ffffff;
+			color: #8d7676;
 			font-size: 14px;
 		}
 	}
@@ -235,7 +235,7 @@
 		border: 0;
 	}
 	.lnr-cross {
-		color: #fff;
+		color: #811919;
 		font-weight: 600;
 		cursor: pointer;
 		padding: 10px 3px;

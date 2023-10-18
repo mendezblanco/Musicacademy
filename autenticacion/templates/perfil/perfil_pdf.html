@@ -15,8 +15,8 @@
     text-align: center;
     }
     th {
-    background-color: #FF940C;
-    color: white;
+    background-color: #0fcce9;
+    color: rgb(4, 4, 4);
     }
     th, td {
     padding: 4px 1px 1px 2px;
@@ -33,16 +33,16 @@
     
 <body class="Bodyss">
 
-    <img style="padding: 0; display:block" src="https://i.postimg.cc/mgJP7xrn/Encabezado-Factura.png" width="100%" class="img-fluid" alt="Responsive image">
+    <img style="padding: 0; display:block" src="https://i.postimg.cc/T1zLGjhg/d1c71cb4-e6c8-4825-ab10-b432cd29bf33-copia.jpg" width="100%" class="img-fluid" alt="Responsive image">
     <!--================Contact Area =================-->
     <p class="datos">
-        <b>Cliente:</b> {{user.username}} <br>
+        <b>Estudiante de musica</b> {{user.username}} <br>
         <b>Nombre:</b> {{user.first_name}} {{user.last_name}} <br>
         <b>Correo:</b> {{user.email}}
     </p>
 	<!--================Contact Area =================-->
 
-    <h1>Resumen de Compras</h1>
+    <h1>Resumen asignacion</h1>
 
 	        <!--================Cart Area =================-->
 			<section class="cart_area">
@@ -52,11 +52,11 @@
 							<table class="table" style="border: 1px solid;">
 								<thead>
 									<tr>
-										<th ><strong>No. de Factura</strong></th>
-										<th >Producto</th>
-										<th >Cantidad</th>
-										<th >Fecha de compra</th>
-										<th >Estado</th>
+										<th ><strong>Número de asignación</strong></th>
+										<th >Curso</th>
+										<!------<th >Cantidad</th>---->
+										<th >Fecha de asignacion</th>
+										<th >Estado del curso </th>
 									</tr>
 								</thead>
 								<tbody>                                
@@ -74,9 +74,9 @@
 														{% endif %}
 													{% endfor %}
 												</td>
-												<td align="center">
+											<!--	<td align="center">
 													<p>{{articulos_comprados.cantidad}}</p>
-												</td>
+												</td>-->
 												<td align="center">
 													<p>{{articulos_comprados.created_at.date}}</p>
 												</td>
@@ -84,9 +84,9 @@
 													{% for pedidos_comprados in pedidos_comprados %}
 														{% if pedidos_comprados.id == articulos_comprados.pedido_id %}
 															{% if pedidos_comprados.entregado is True %}
-																<h5>Entregado</h5>
+																<h5>Cursando</h5>
 															{% else %}
-																<h5>En camino</h5>
+																<h5>Sin cursar</h5>
 															{% endif %}
 														{% endif %}
 													{% endfor %}
