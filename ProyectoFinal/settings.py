@@ -128,12 +128,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'Music_academy',
         'USER': 'postgres',
-        'PASSWORD': 'alexj2020',
+        'PASSWORD': 'andre123',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-        'OPTIONS': {
-               'client_encoding': 'UTF8',
-        },
+
     }
 }
 
